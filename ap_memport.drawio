@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T17:29:52.028Z" agent="5.0 (X11)" etag="ELq0qYc9zegyjbFqhKfX" version="17.4.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-01T17:47:38.449Z" agent="5.0 (X11)" etag="0Izyrfuvm6e-_2dl_tkw" version="17.4.6" type="github" pages="2">
   <diagram id="fBou8jqfJ-IzIA2dnfak" name="ethash_kernel">
     <mxGraphModel dx="1357" dy="807" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#333333" math="0" shadow="0">
       <root>
@@ -291,6 +291,23 @@
         </mxCell>
         <mxCell id="7b8I5361_43grpr16aAd-35" value="256" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
           <mxGeometry x="358" y="240" width="73" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-36" value="./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; hls::stream&amp;lt;ap_uint&amp;lt;256&amp;gt; &amp;gt; mixStrm;&lt;br&gt;./hw/include/ethashV8return.hpp:#pragma HLS stream variable = mixStrm depth = 8&lt;br&gt;./hw/include/ethashV8return.hpp:#pragma HLS resource variable = mixStrm core = FIFO_SRL&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, compressStrm, sha512Strm0, sha512Strm1, mixStrm);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_256_96_strm(batch_cnt_ap, sha512Strm0, sha512Strm1, mixStrm, mixhashStrm, resultStrm);&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-361" y="885" width="882" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7b8I5361_43grpr16aAd-37" target="7b8I5361_43grpr16aAd-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="466" y="873" />
+              <mxPoint x="301" y="873" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-37" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="438" y="212" width="55" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-39" value="256" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="433" y="240" width="73" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
