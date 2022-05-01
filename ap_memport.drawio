@@ -1,20 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T14:47:30.779Z" agent="5.0 (X11)" etag="NtM8mIsggUQ53qwF9PAB" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-01T15:09:00.236Z" agent="5.0 (X11)" etag="W0tk6haE36vnw17XlK1v" version="17.4.6" type="github">
   <diagram id="fBou8jqfJ-IzIA2dnfak" name="ethash_kernel">
     <mxGraphModel dx="1357" dy="807" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#333333" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PowGZbfVUuosZzaBvfRT-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PowGZbfVUuosZzaBvfRT-41">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="334" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="278" y="459" />
-              <mxPoint x="278" y="334" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-61" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="138" width="179" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-59" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79" y="320" width="179" height="182" as="geometry" />
         </mxCell>
         <mxCell id="PowGZbfVUuosZzaBvfRT-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="798" y="233" width="222" height="277" as="geometry" />
+          <mxGeometry x="1000" y="552" width="222" height="277" as="geometry" />
         </mxCell>
         <mxCell id="vV10gTrduIRS4eCzoeQk-2" value="mem ports" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="33" y="19" width="120" height="13" as="geometry" />
@@ -103,46 +100,64 @@
         <mxCell id="PowGZbfVUuosZzaBvfRT-31" value="&lt;div&gt;kernel0.setArg(j++, header_hash0)&lt;/div&gt;&lt;div&gt;test.cpp&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="552" y="133" width="194" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PowGZbfVUuosZzaBvfRT-32" target="PowGZbfVUuosZzaBvfRT-13">
+        <mxCell id="PowGZbfVUuosZzaBvfRT-32" value="&lt;div&gt;boundary_ap.range(31, 0)&lt;/div&gt;&lt;div&gt;ethashV8return.hpp&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="461" width="250" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-33" value="kernel0.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="576" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-34" value="kernel1.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="607.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-35" value="kernel2.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="638.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-36" value="kernel3.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="670.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-37" value="kernel4.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="702.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-38" value="kernel5.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="734.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-39" value="kernel6.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="766.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-40" value="kernel7.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="798.5" width="184" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-42" value="host/test.hpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="556" width="120" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-46" value="&lt;div&gt;unsigned boundary0 = boundary.range(31, 0)&lt;/div&gt;&lt;div&gt;test.cpp&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="504" width="250" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PowGZbfVUuosZzaBvfRT-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.994;entryY=0.434;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PowGZbfVUuosZzaBvfRT-55" target="PowGZbfVUuosZzaBvfRT-61">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="305" y="279" />
-              <mxPoint x="305" y="333" />
+              <mxPoint x="756" y="151" />
+              <mxPoint x="756" y="217" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-32" value="&lt;div&gt;boundary_ap.range(31, 0)&lt;/div&gt;&lt;div&gt;ethashV8return.hpp&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="358" y="259" width="250" height="39" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-55" value="./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(31, 0) = header_hash0;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(63, 32) = header_hash1;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(95, 64) = header_hash2;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(127, 96) = header_hash3;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(159, 128) = header_hash4;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(191, 160) = header_hash5;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(223, 192) = header_hash6;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(255, 224) = header_hash7;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="810" y="89" width="503" height="123" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-33" value="kernel0.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="257" width="184" height="25" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PowGZbfVUuosZzaBvfRT-57" target="PowGZbfVUuosZzaBvfRT-59">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-34" value="kernel1.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="288.5" width="184" height="25" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-57" value="./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(31, 0) = boundary0;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(63, 32) = boundary1;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(95, 64) = boundary2;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(127, 96) = boundary3;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(159, 128) = boundary4;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(191, 160) = boundary5;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(223, 192) = boundary6;&lt;br&gt;./fta/fta/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; boundary_ap.range(255, 224) = boundary7;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="808" y="237" width="466" height="132" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-35" value="kernel2.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="319.5" width="184" height="25" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-65" value="./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; cl::Kernel kernel7(program, &quot;ethash_kernel7&quot;);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, (unsigned)(full_size / 128));&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash4);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash5);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash6);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, header_hash7);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary4);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary5);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary6);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, boundary7);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, nonce_start0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, nonce_start1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, num);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, buf_dram0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, buf_dram1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, buf_dram2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, buf_dram3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel7.setArg(j++, buf_ret);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; q.enqueueTask(kernel7, &amp;amp;write_event, &amp;amp;kernel_event[7]);&lt;br&gt;./pasasource/ethash8Greturn/kernel/ethash_kernel.hpp:extern &quot;C&quot; void ethash_kernel7(unsigned full_size,&lt;br&gt;./pasasource/ethash8Greturn/kernel/ethash_kernel7.cpp:extern &quot;C&quot; void ethash_kernel7(unsigned full_size,&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:nk=ethash_kernel7:1:ethash_kernel7&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel7.m_axi_gmem_0:HBM[0:7]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel7.m_axi_gmem_1:HBM[24:31]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel7.m_axi_gmem_2:HBM[16:23]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel7.m_axi_gmem_3:HBM[8:15]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:slr=ethash_kernel7:SLR0&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="607" y="970" width="596" height="622" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-36" value="kernel3.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="351.5" width="184" height="25" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-63" value="./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; cl::Kernel kernel0(program, &quot;ethash_kernel0&quot;);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, (unsigned)(full_size / 128));&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash4);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash5);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash6);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, header_hash7);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary4);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary5);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary6);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, boundary7);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, nonce_start0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, nonce_start1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, num);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, buf_dram0);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, buf_dram1);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, buf_dram2);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, buf_dram3);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; kernel0.setArg(j++, buf_ret);&lt;br&gt;./pasasource/ethash8Greturn/host/test.cpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; q.enqueueTask(kernel0, &amp;amp;write_event, &amp;amp;kernel_event[0]);&lt;br&gt;./pasasource/ethash8Greturn/kernel/ethash_kernel.hpp:extern &quot;C&quot; void ethash_kernel0(unsigned full_size,&lt;br&gt;./pasasource/ethash8Greturn/kernel/ethash_kernel0.cpp:extern &quot;C&quot; void ethash_kernel0(unsigned full_size,&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:nk=ethash_kernel0:1:ethash_kernel0&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel0.m_axi_gmem_0:HBM[0:7]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel0.m_axi_gmem_1:HBM[24:31]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel0.m_axi_gmem_2:HBM[16:23]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:sp=ethash_kernel0.m_axi_gmem_3:HBM[8:15]&lt;br&gt;./pasasource/ethash8Greturn/conn_u50.ini:slr=ethash_kernel0:SLR1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="14" y="970" width="595" height="622" as="geometry" />
         </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-37" value="kernel4.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="383.5" width="184" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-38" value="kernel5.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="415.5" width="184" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-39" value="kernel6.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="447.5" width="184" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-40" value="kernel7.setArg(j++, boundary0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="828" y="479.5" width="184" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-42" value="host/test.hpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="798" y="237" width="120" height="16" as="geometry" />
-        </mxCell>
-        <mxCell id="PowGZbfVUuosZzaBvfRT-46" value="&lt;div&gt;unsigned boundary0 = boundary.range(31, 0)&lt;/div&gt;&lt;div&gt;test.cpp&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="358" y="306" width="250" height="34" as="geometry" />
+        <mxCell id="PowGZbfVUuosZzaBvfRT-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="202" y="1276" width="928" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
