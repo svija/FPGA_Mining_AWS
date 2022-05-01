@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T15:09:00.236Z" agent="5.0 (X11)" etag="W0tk6haE36vnw17XlK1v" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-01T15:25:50.564Z" agent="5.0 (X11)" etag="b6p8ylm-nSuPzp5pqt1P" version="17.4.6" type="github" pages="2">
   <diagram id="fBou8jqfJ-IzIA2dnfak" name="ethash_kernel">
     <mxGraphModel dx="1357" dy="807" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#333333" math="0" shadow="0">
       <root>
@@ -158,6 +158,85 @@
         </mxCell>
         <mxCell id="PowGZbfVUuosZzaBvfRT-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="202" y="1276" width="928" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L0ULEhpQqj22RcRa5JsD" name="Page-2">
+    <mxGraphModel dx="1336" dy="557" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#333333" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7b8I5361_43grpr16aAd-1" value="./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; ap_uint&amp;lt;256&amp;gt; header_hash_ap; // the AXI Lite can only transfer 32bit data. So combine them back to 256bit&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(31, 0) = header_hash0;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(63, 32) = header_hash1;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(95, 64) = header_hash2;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(127, 96) = header_hash3;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(159, 128) = header_hash4;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(191, 160) = header_hash5;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(223, 192) = header_hash6;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; header_hash_ap.range(255, 224) = header_hash7;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, sha3_512_Strm0, sha3_512_Strm1);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, compressStrm, sha512Strm0, sha512Strm1, mixStrm);" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="60" width="880" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-2" value="header_hash_ap" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="20" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-3" value="./hw/include/ethashV8return.hpp:inline void sha3_512_40_strm(ap_uint&amp;lt;256&amp;gt; header_hash,&lt;br&gt;./hw/include/ethashV8return.hpp:inline void sha3_512_40_strm(ap_uint&amp;lt;256&amp;gt; header_hash,&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, sha3_512_Strm0, sha3_512_Strm1);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, compressStrm, sha512Strm0, sha512Strm1, mixStrm);&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="278" width="880" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7b8I5361_43grpr16aAd-4" target="7b8I5361_43grpr16aAd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-171" y="212" width="105" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-6" value="./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; ap_uint&amp;lt;64&amp;gt; nonce_start_ap;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; nonce_start_ap.range(31, 0) = nonce_start0;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; nonce_start_ap.range(63, 32) = nonce_start1;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="380" width="882" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7b8I5361_43grpr16aAd-7" target="7b8I5361_43grpr16aAd-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="98" y="368" />
+              <mxPoint x="81" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="29" y="212" width="92" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-11" value="./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; ap_uint&amp;lt;32&amp;gt; batch_cnt_ap = batch_cnt;&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, sha3_512_Strm0, sha3_512_Strm1);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; mixdag(batch_cnt_ap, full_size_ap, dram0, dram1, dram2, dram3, sha3_512_Strm0, sha3_512_Strm1, mixStrm00, mixStrm01,&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; compress_strm(batch_cnt_ap, mixStrm00, mixStrm01, mixStrm10, mixStrm11, compressStrm);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_512_40_strm(header_hash_ap, nonce_start_ap, batch_cnt_ap, compressStrm, sha512Strm0, sha512Strm1, mixStrm);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; sha3_256_96_strm(batch_cnt_ap, sha512Strm0, sha512Strm1, mixStrm, mixhashStrm, resultStrm);&lt;br&gt;./hw/include/ethashV8return.hpp:&amp;nbsp;&amp;nbsp;&amp;nbsp; check(batch_cnt_ap, boundary_ap, mixhashStrm, resultStrm, resultOut);&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-362" y="458" width="882" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="7b8I5361_43grpr16aAd-17" target="7b8I5361_43grpr16aAd-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="446" />
+              <mxPoint x="300" y="446" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="121" y="212" width="78" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-14" value="256" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="-66" y="240" width="88" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-16" value="64[31-0 63-32]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="29" y="240" width="92" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-17" value="32" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="126" y="240" width="41" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="7b8I5361_43grpr16aAd-12" target="7b8I5361_43grpr16aAd-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.00000000000023" y="228" as="sourcePoint" />
+            <mxPoint x="299.5000000000002" y="458" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-19" value="64[31-0 63-32]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="75" y="405" width="92" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-20" value="64[31-0 63-32]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="79" y="420" width="92" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-21" value="32" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="52" y="471" width="41" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7b8I5361_43grpr16aAd-22" value="256" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="413" y="67" width="88" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
